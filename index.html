@@ -1,0 +1,28 @@
+<html lang="de">
+<head>
+    <title>12-Ton-Musik</title>
+    <script src="https://unpkg.com/vexflow@3.0.9/releases/vexflow-min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<label>
+    <h3>Input</h3>
+    <input id="random_lut" type="text" size="100" value="h,0;q,1;8,2;8,0;h,1;q,2;8,0;8,1;h,2;q,0;8,1;8,2">
+    <button onclick="load_rlut()">Load R-LUT</button>
+    <br/>
+    <input id="random_notes" type="text" size="100" value="0,3,9,1,2,7,5,4,11,8,10,6">
+    <button onclick="load_notes()">Load R-Notes</button>
+    <h3>Encryption</h3>
+    <input id="transcription_amount" type="number" placeholder="Amount">
+    <button onclick="transcribe()">Transpose</button>
+    <p/>
+    <button onclick="cancer()">CancR</button>
+    <p/>
+    <button onclick="invert()">Invert</button>
+    <h3>Output</h3>
+    <input id="note_output" disabled type="text">
+    <input id="index_output" disabled type="text">
+</label>
+<div id="boo"></div>
+</body>
+</html>
